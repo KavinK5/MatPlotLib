@@ -5,8 +5,11 @@ pyplot.plot(xAxis , yAxis , color='#ababab' , linewidth=2 , marker='*' , markers
 
 pyplot.title('2D PLot',fontdict={'fontname':'Comic Sans MS','fontsize':'14'})
 
-pyplot.xlabel('X',fontdict={'fontname':'Comic Sans MS','fontsize':'12'})
-pyplot.ylabel('Y',fontdict={'fontname':'Comic Sans MS','fontsize':'12'})
+fontDICT = {'fontname':'Comic Sans MS',
+            'fontsize':'12'}
+
+pyplot.xlabel('X',fontdict = fontDICT)
+pyplot.ylabel('Y',fontdict = fontDICT)
 
 pyplot.xticks([0,1,3,5,7,9,11])
 pyplot.yticks([0,5,10,15,20,25,31])
