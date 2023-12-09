@@ -1,17 +1,13 @@
-xAxis = [0,1,2,3,4,5,6,7,8,9,10]
-yAxis = [0,1,4,7,9,13,17,20,23,26,30]
+import matplotlib
+from matplotlib import pyplot
+import numpy
 
-pyplot.plot(xAxis , yAxis , color='#ababab' , linewidth=2 , marker='*' , markersize=10 , markeredgecolor='#000' ,linestyle='-')
+pyplot.resize(figsize = (6 , 4) , dip = 200) #for length and width of the graph
+#Include this immediately after the importing code line
 
-pyplot.title('2D PLot',fontdict={'fontname':'Comic Sans MS','fontsize':'14'})
+x1 = numpy.arange(1,11,2)
+y2 = numpy.arange(2,12,2)
 
-fontDICT = {'fontname':'Comic Sans MS',
-            'fontsize':'12'}
-
-pyplot.xlabel('X',fontdict = fontDICT)
-pyplot.ylabel('Y',fontdict = fontDICT)
-
-pyplot.xticks([0,1,3,5,7,9,11])
-pyplot.yticks([0,5,10,15,20,25,31])
+pyplot.plot(x1 , y1)
 
 pyplot.show()
