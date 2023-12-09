@@ -23,6 +23,8 @@ fontDICT = {'fontname':'Comic Sans MS',
 pyplot.xlabel('X',fontdict = fontDICT)
 pyplot.ylabel('Y',fontdict = fontDICT)
 
+pyplot.xticks([]) #This empty list inside will remove the axis values
+
 pyplot.legend()
 
 pyplot.show()
